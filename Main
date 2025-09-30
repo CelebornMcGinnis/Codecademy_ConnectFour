@@ -1,0 +1,26 @@
+#Board Data Structure
+dividers = ["*---*---*---*---*---*---*---*"]
+unchanging_rows = ["|   |   |   |   |   |   |   |"]
+table_header = [" "," ","1"," "," "," ","2"," "," "," ","3"," "," "," ","4"," "," "," ","5"," "," "," ","6"," "," "," ","7"," "," "]
+change_row1 = ["|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"]
+change_row2 = ["|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"]
+change_row3 = ["|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"]
+change_row4 = ["|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"]
+change_row5 = ["|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"]
+change_row6 = ["|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"," "," "," ","|"]
+
+board_table = [
+  table_header,dividers,
+  unchanging_rows,change_row1,unchanging_rows,dividers,
+  unchanging_rows,change_row2,unchanging_rows,dividers,
+  unchanging_rows,change_row3,unchanging_rows,dividers,
+  unchanging_rows,change_row4,unchanging_rows,dividers,
+  unchanging_rows,change_row5,unchanging_rows,dividers,
+  unchanging_rows,change_row6,unchanging_rows,dividers
+  ]
+
+index = 0
+for i in board_table:
+  for index in i:
+    print(index, end="")
+  print()
